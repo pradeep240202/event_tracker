@@ -17,7 +17,7 @@ Docker (Containerization)
 
 Local Development Setup
 
-    Clone the Repository:
+Clone the Repository:
         git clone <repo-url>
         cd event_tracker
 
@@ -46,24 +46,24 @@ Environment Variables (.env)
 
 
 API Endpoints
-    POST /api/events/: Create a new event.
+POST /api/events/: Create a new event.
     
-        Request Body:
-            {
-                "type": "event_type",
-                "source": "event_source",
-                "timestamp": "2025-05-07T00:00:00Z"
-            }
+    Request Body:
+        {
+            "type": "event_type",
+            "source": "event_source",
+            "timestamp": "2025-05-07T00:00:00Z"
+        }
             
         
-        Response:
+    Response:
         
-            {
-                "id": 1,
-                "type": "event_type",
-                "source": "event_source",
-                "timestamp": "2025-05-07T00:00:00Z"
-            }
+        {
+            "id": 1,
+            "type": "event_type",
+            "source": "event_source",
+            "timestamp": "2025-05-07T00:00:00Z"
+        }
 
 GET /api/events/: List all events.
 
