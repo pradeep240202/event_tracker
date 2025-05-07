@@ -2,17 +2,17 @@ Event Tracker Platform
     A simplified event tracking platform with REST APIs and background task processing using Celery.
 
 Technologies Used
-    Django (Backend framework)
+Django (Backend framework)
 
-    Django REST Framework (API creation)
+Django REST Framework (API creation)
 
-    Celery (Background task processing)
+Celery (Background task processing)
 
-    Redis (Broker for Celery)
+Redis (Broker for Celery)
 
-    SQLite (Database for simplicity)
+SQLite (Database for simplicity)
 
-    Docker (Containerization)
+Docker (Containerization)
 
 
 Local Development Setup
