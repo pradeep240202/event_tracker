@@ -40,12 +40,14 @@ Docker Setup
 
 
 Environment Variables (.env)
+
     CELERY_BROKER_URL=redis://redis:6379/0
     SQLITE_DB_PATH=./db.sqlite3
 
 
 API Endpoints
     POST /api/events/: Create a new event.
+    
         Request Body:
         {
             "type": "event_type",
@@ -82,6 +84,7 @@ GET /api/events/: List all events.
 
 
 GET /api/events/<id>/: Get a specific event.
+
 Response:
     {
         "id": 1,
