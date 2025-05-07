@@ -22,6 +22,7 @@ Clone the Repository:
         cd event_tracker
 
 Install Dependencies:
+
     pip install -r requirements.txt
 
 Apply Migrations:
