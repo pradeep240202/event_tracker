@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis_server1
+    ports:
+      - "6379:6379"
+
+  backend:
+    build: .
+    container_name: event_tracker
+    restart: always
+    depends_on:
+      - redis
+    environment:
+      - CELERY_BROKER_URL=${CELERY_BROKER_URL}  # Passing environment variable for Celery broker
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+
+  celery:
+    build: .
+    container_name: celery_worker
+    restart: always
+    depends_on:
+      - backend
+      - redis
+    command: celery -A event_tracker worker --loglevel=info
+    volumes:
+      - .:/app
+    environment:
+      - CELERY_BROKER_URL=${CELERY_BROKER_URL}
+    ports:
+      - '6900-7000:6900-7000'
+    stdin_open: true
+    tty: true
+
+volumes:
+  postgres_data:

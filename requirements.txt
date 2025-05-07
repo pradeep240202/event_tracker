@@ -1,0 +1,15 @@
+asgiref==3.8.1
+Django==5.2.1
+djangorestframework==3.16.0
+sqlparse==0.5.3
+celery==5.5.2
+psycopg2-binary==2.9.10
+django-redis==5.4.0
+redis==6.0.0
+kombu==5.5.3
+psycopg==3.2.3
+python-dotenv==1.1.0
+
+
+
+
