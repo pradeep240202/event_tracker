@@ -25,6 +25,7 @@ Install Dependencies:
     pip install -r requirements.txt
 
 Apply Migrations:
+
     python manage.py migrate
 
 Run the Django Server:
