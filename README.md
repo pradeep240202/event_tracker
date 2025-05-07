@@ -18,6 +18,7 @@ Docker (Containerization)
 Local Development Setup
 
 Clone the Repository:
+
         git clone <repo-url>
         cd event_tracker
 
