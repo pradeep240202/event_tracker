@@ -86,13 +86,13 @@ GET /api/events/: List all events.
 
 GET /api/events/<id>/: Get a specific event.
 
-Response:
-    {
-        "id": 1,
-        "type": "event_type",
-        "source": "event_source",
-        "timestamp": "2025-05-07T00:00:00Z"
-    }
+    Response:
+        {
+            "id": 1,
+            "type": "event_type",
+            "source": "event_source",
+            "timestamp": "2025-05-07T00:00:00Z"
+        }
 
 
 Notes
