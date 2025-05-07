@@ -49,38 +49,38 @@ API Endpoints
     POST /api/events/: Create a new event.
     
         Request Body:
-        {
-            "type": "event_type",
-            "source": "event_source",
-            "timestamp": "2025-05-07T00:00:00Z"
-        }
+            {
+                "type": "event_type",
+                "source": "event_source",
+                "timestamp": "2025-05-07T00:00:00Z"
+            }
         
         Response:
         
-        {
-            "id": 1,
-            "type": "event_type",
-            "source": "event_source",
-            "timestamp": "2025-05-07T00:00:00Z"
-        }
+            {
+                "id": 1,
+                "type": "event_type",
+                "source": "event_source",
+                "timestamp": "2025-05-07T00:00:00Z"
+            }
 
 GET /api/events/: List all events.
 
     Response:
-    {
-        "count": 7,
-        "next": "http://localhost:8003/api/events/?page=2",
-        "previous": null,
-        "results": [
         {
-        
-                "id": 1,
-                "type": "login",
-                "source": "web",
-                "timestamp": "2025-05-07T12:00:00Z"
-              }
-        ]
-        }
+            "count": 7,
+            "next": "http://localhost:8003/api/events/?page=2",
+            "previous": null,
+            "results": [
+            {
+            
+                    "id": 1,
+                    "type": "login",
+                    "source": "web",
+                    "timestamp": "2025-05-07T12:00:00Z"
+                  }
+            ]
+            }
 
 
 
