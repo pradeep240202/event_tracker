@@ -37,6 +37,7 @@ Run the Django Server:
 Docker Setup
 
     Build the Docker Containers:
+    
         docker-compose build
         docker-compose up -d
 
